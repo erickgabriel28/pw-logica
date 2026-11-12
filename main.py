@@ -1,9 +1,6 @@
-a = 5 #isso é um numero inteiro
-b- 6.2 #isso é um numero com .
-nome = "Erick" #aqui e um string (texto)
-ligado = True #aqui e um bool
-
-print(a)
-print(b)
-print(nome)
-print(ligado)
+print(5 + 5)
+print(2 + 2)
+print(1 + 4)
+print(10 - 2)
+print(7 * 3)
+print(10 / 2)
