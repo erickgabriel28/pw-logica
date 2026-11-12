@@ -1,6 +1,7 @@
-num1 = int(input("Digite um numero para: "))
-num2 = int(input("Digite outro numero para somar: "))
+numero = int(input("Digite um numero interior"))
+numero_com_virgula = float(input("Digite um numero com ponto: "))
+nome_string = input("Digite um nome: ")
 
-soma = num1 + num2
-
-print("O resultado da soma é:", soma)
+print("Veja o numero inteiro ", numero)
+print("Veja o numero com ponto ", numero_com_virgula)
+print("Veja o nome digitado: ", nome_virgula)
