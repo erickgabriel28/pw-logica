@@ -1,11 +1,6 @@
-nome = input("Digite seu nome: ")
-idade = input("Qual sua idade: ")
-altura = input("Qual sua altura: ")
-escola = input("Em qual escola você estuda: ")
-cidade = input("Em qual cidade você mora: ")
+num1 = int(input("Digite um numero para: "))
+num2 = int(input("Digite outro numero para somar: "))
 
-print("O nome da pessoa é ", nome)
-print("Idade da pessoa", idade)
-print("A altura da pessoa é", altura)
-print("Escola que a pessoa estuda é ", escola)
-print("Cidade que a pessoa mora ", cidade)
+soma = num1 + num2
+
+print("O resultado da soma é:", soma)
