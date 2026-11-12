@@ -1,4 +1,5 @@
-x, y, z = "Orange", "Banana", "Cherry"
+frutas = ["Maça", "Banana", "Cereja"]
+x, y, z = frutas
 
 print(x)
 print(y)
