@@ -1,17 +1,12 @@
-print("=== CONVERSOR DE ARMAZENAMENTO")
+print("=== CALCULADORA DE DESCONTOS ===")
+produto = input("Nome do produto: ")
+preco = float(input("Preço: R$"))
+descontos = float(input("Desconto (%): "))
 
-bytes = float(input("Digite a quantidade de Bytes: "))
-kb = float(input("Digite a quantidade de KB"))
-mb = float(input("Digite a quantidae de MB: "))
+valor_desconto = preco * (desconto / 100)
+preco_final = preco - valor_desconto
 
-resultado_kb = bytes / 1024
-resultado_mb = kb / 1014
-resultado_gb = mb / 1024
-
-print("\n=== RESULTADOS ===")
-
-print(f"{bytes} Bytes = {resultado_kb:,2f} KB")
-print(f"{bytes} KB = {resultado_mb:,2f} MB")
-print(f"{bytes} MB = {resultado_Gb:,2f} GB")
-
-
+print(f"\nProdutos: {produtos}")
+print(f"Preço Original: R$ {preco:.2f}")
+print(f"Desconto: R$ {valor_desconto:.2f}")
+print(f"Preço final: R$ {preco_final:.2f}")
