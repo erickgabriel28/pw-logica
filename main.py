@@ -1,12 +1,32 @@
-num1 = float(input("Digite um valor: "))
-num2 = float(input("Digite um valor: "))
+import random
 
-soma = num1 + num2
-subt = num1 - num2
-mult = num1 * num2
-div = num1 / num2
 
-print("o resultado da soma é:",soma)
-print("o resultado da subtração é:",subt)
-print("o resultado da multiplicação é:",mult)
-print("o resultado da divisão é:",div)
+opcoes = ['pedra', 'papel', 'tesoura']
+
+
+computador = random.choice(opcoes)
+
+
+jogador = input("Escolha entre pedra, papel ou tesoura: ").strip().lower()
+
+
+if jogador not in opcoes:
+    print("Jogada inválida! Por favor, escolha apenas 'pedra', 'papel' ou 'tesoura'.")
+else:
+
+    print("-" * 30)
+    print(f"Computador escolheu: {computador}")
+    print(f"Você escolheu: {jogador}")
+    print("-" * 30)
+
+
+    if jogador == computador:
+        print("Empate! Vocês fizeram a mesma escolha.")
+    elif (
+        (jogador == 'pedra' and computador == 'tesoura') or
+        (jogador == 'papel' and computador == 'pedra') or
+        (jogador == 'tesoura' and computador == 'papel')
+    ):
+        print("Você ganhou!")
+    else:
+        print("Você perdeu!")
