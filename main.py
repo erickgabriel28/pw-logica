@@ -1,26 +1,13 @@
-num1 = float(input("Digite o primeiro valor: "))
-num2 = float(input("Digite o segundo valor: "))
-operacao = input("Digite a operação desejada (+, -, * ou /): ")
+idade = int(input("Digite a sua idade: "))
 
-if operacao == "+":
-    resultado = num1 + num2
-    print(f"O resultado da soma é: {resultado}")
-
-elif operacao == "-":
-resultado = num1 - num2
-print(f"O resultado da subtração é: {resultado}")
-
-elif operacao == "":
-resultado = num1 * num2
-print(f"O resultado da multiplicação é: {resultado}")
-
-elif operacao == "/":
-if num2 != 0:
-    resultado = num1 / num2
-    print(f"O resultado da divisão é: {resultado:.2f}")
-
+# Verifica a classificação com base na idade
+if idade < 0:
+    print("Idade inválida")
+elif idade <= 12:
+    print("Criança")
+elif idade <= 17:
+    print("Adolescente")
+elif idade <= 59:
+    print("Adulto")
 else:
-    print("Erro! Não pode dividir por zero!")
-
-else:
- print("Operação inválida!")
+    print("Idoso")
