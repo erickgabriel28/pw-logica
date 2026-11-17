@@ -1,11 +1,14 @@
 nota = float(input("Sua nota: ").replace(",", "."))
 
-if nota == 10:
-    print("Nossa parabens")
+if nota >= 9:
+    print("Conceito A - exelente!")
 
-elif nota != 0:
-    print("Foi mal em")
+elif nota >= 7 < 9:
+    print("Conceito B - Bom!")
 
-if nota >= 7:
- print("Boua")
+elif nota >= 5 < 7:
+    print("Conceito C - Regular")
+
+else:
+    print("Conceito D = Reprovado")
     
