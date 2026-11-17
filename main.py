@@ -1,14 +1,15 @@
-nota = float(input("Sua nota: ").replace(",", "."))
+nome = input("Qual seu nome? ")
 
-if nota >= 9:
-    print("Conceito A - exelente!")
+altura = float(input("Digite sua altura em metros: "))
+peso = float(input("Digite seu peso em KG: "))
 
-elif nota >= 7 < 9:
-    print("Conceito B - Bom!")
+imc = peso / (altura ** 2)
 
-elif nota >= 5 < 7:
-    print("Conceito C - Regular")
+if imc < 18.5:
+    print("IMC abaixo do peso 18.5")
+
+elif imc < 25:
+    print("IMC entre 18.5 e 24.9 na media")
 
 else:
-    print("Conceito D = Reprovado")
-    
+    print("IMC igual ou acima de 25 gordo")
