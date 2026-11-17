@@ -1,32 +1,26 @@
-import random
+num1 = float(input("Digite o primeiro valor: "))
+num2 = float(input("Digite o segundo valor: "))
+operacao = input("Digite a operação desejada (+, -, * ou /): ")
 
+if operacao == "+":
+    resultado = num1 + num2
+    print(f"O resultado da soma é: {resultado}")
 
-opcoes = ['pedra', 'papel', 'tesoura']
+elif operacao == "-":
+resultado = num1 - num2
+print(f"O resultado da subtração é: {resultado}")
 
+elif operacao == "":
+resultado = num1 * num2
+print(f"O resultado da multiplicação é: {resultado}")
 
-computador = random.choice(opcoes)
+elif operacao == "/":
+if num2 != 0:
+    resultado = num1 / num2
+    print(f"O resultado da divisão é: {resultado:.2f}")
 
-
-jogador = input("Escolha entre pedra, papel ou tesoura: ").strip().lower()
-
-
-if jogador not in opcoes:
-    print("Jogada inválida! Por favor, escolha apenas 'pedra', 'papel' ou 'tesoura'.")
 else:
+    print("Erro! Não pode dividir por zero!")
 
-    print("-" * 30)
-    print(f"Computador escolheu: {computador}")
-    print(f"Você escolheu: {jogador}")
-    print("-" * 30)
-
-
-    if jogador == computador:
-        print("Empate! Vocês fizeram a mesma escolha.")
-    elif (
-        (jogador == 'pedra' and computador == 'tesoura') or
-        (jogador == 'papel' and computador == 'pedra') or
-        (jogador == 'tesoura' and computador == 'papel')
-    ):
-        print("Você ganhou!")
-    else:
-        print("Você perdeu!")
+else:
+ print("Operação inválida!")
