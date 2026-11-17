@@ -1,15 +1,12 @@
-nome = input("Qual seu nome? ")
+num1 = float(input("Digite um valor: "))
+num2 = float(input("Digite um valor: "))
 
-altura = float(input("Digite sua altura em metros: "))
-peso = float(input("Digite seu peso em KG: "))
+soma = num1 + num2
+subt = num1 - num2
+mult = num1 * num2
+div = num1 / num2
 
-imc = peso / (altura ** 2)
-
-if imc < 18.5:
-    print("IMC abaixo do peso 18.5")
-
-elif imc < 25:
-    print("IMC entre 18.5 e 24.9 na media")
-
-else:
-    print("IMC igual ou acima de 25 gordo")
+print("o resultado da soma é:",soma)
+print("o resultado da subtração é:",subt)
+print("o resultado da multiplicação é:",mult)
+print("o resultado da divisão é:",div)
