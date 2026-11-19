@@ -1,22 +1,19 @@
-preco = 40.0
+a = int(input("Digite o lado A: "))
+b = int(input("Digite o lado B: "))
+c = int(input("Digite o lado C: "))
 
-idade = int(input("Digite a idade do cliente: "))
-dia = input("Digite o dia da semana (seg, ter, qua, qui, sex, sab, dom): ").strip().lower()
+if a < b + c and b < a + c and c < a + b:
 
-if idade <= 12:
-    preco = preco * 0.5
-    print("Meia-entrada: criança")
-elif idade <= 21:
-    preco = preco * 0.5
-    print("Meia-entrada: estudante")
-elif idade >= 60:
-    preco = preco * 0.5
-    print("Meia-entrada: idoso")
+    print("Forma um triangulo! ")
+
+    if a == b and b == c:
+        print("Triangulo Equilátero! ")
+
+    elif a == b or a == c or b == c:
+        print("Triangulo isóceles! ")
+
+    else:
+        print("Triangulo Escaleno!")
+
 else:
-    print("Ingresso inteiro")
-
-if dia == "qua":
-    preco = preco * 0.5
-    print("Promoção de quarta")
-
-print(f"Valor final do ingresso: R$ {preco:.2f}")
+    print("Não forma um triangulo")
