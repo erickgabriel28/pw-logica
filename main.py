@@ -1,17 +1,22 @@
-nome1 = input("Nome do jogador1: ")
-nome2 = input("Nome do jogador2: ")
-escolha = input(f"{nome1}. você escolhe (par/impar): ").lower()
+preco = 40.0
 
-n1 = int(input(f"{nome1}. seu numero: "))
-n2 = int(input(f"{nome2}. seu numero: "))
+idade = int(input("Digite a idade do cliente: "))
+dia = input("Digite o dia da semana (seg, ter, qua, qui, sex, sab, dom): ").strip().lower()
 
-soma = n1 + n2
-resultado = "par" if soma % 2 == 0 else "impar" 
-
-print(f"\n{n1} + {n2} = {soma} ({resultado})")
- 
-if escolha == resultado:
-    print(f"{nome} ganhou!")
-    
+if idade <= 12:
+    preco = preco * 0.5
+    print("Meia-entrada: criança")
+elif idade <= 21:
+    preco = preco * 0.5
+    print("Meia-entrada: estudante")
+elif idade >= 60:
+    preco = preco * 0.5
+    print("Meia-entrada: idoso")
 else:
-    print(f"{nome2} ganhou!")
+    print("Ingresso inteiro")
+
+if dia == "qua":
+    preco = preco * 0.5
+    print("Promoção de quarta")
+
+print(f"Valor final do ingresso: R$ {preco:.2f}")
