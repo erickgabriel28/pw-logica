@@ -1,13 +1,17 @@
-idade = int(input("Digite a sua idade: "))
+nome1 = input("Nome do jogador1: ")
+nome2 = input("Nome do jogador2: ")
+escolha = input(f"{nome1}. você escolhe (par/impar): ").lower()
 
-# Verifica a classificação com base na idade
-if idade < 0:
-    print("Idade inválida")
-elif idade <= 12:
-    print("Criança")
-elif idade <= 17:
-    print("Adolescente")
-elif idade <= 59:
-    print("Adulto")
+n1 = int(input(f"{nome1}. seu numero: "))
+n2 = int(input(f"{nome2}. seu numero: "))
+
+soma = n1 + n2
+resultado = "par" if soma % 2 == 0 else "impar" 
+
+print(f"\n{n1} + {n2} = {soma} ({resultado})")
+ 
+if escolha == resultado:
+    print(f"{nome} ganhou!")
+    
 else:
-    print("Idoso")
+    print(f"{nome2} ganhou!")
