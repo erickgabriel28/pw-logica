@@ -1,7 +1,9 @@
-numero = int(input("Digite um número:"))
+senha_correta = "1234"
 
-for contador in range (1, 11):  
+senha = input ("Digite a senha:")
 
- resultado = numero * contador
+while senha != senha_correta:
+    print("Senha incorreta! Tente novamente.")
+    senha = input("Digite a senha: ")
 
-print(f"{numero} x {contador} = {resultado}")
+print("Acesso permitido!")
