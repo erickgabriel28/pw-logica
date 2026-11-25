@@ -1,6 +1,7 @@
-numero = int(input("Digite um numero inteiro: "))
+numero = int(input("Digite um número:"))
 
-for contador in range(numero, -1, -1):
-    print(contador)
+for contador in range (1, 11):  
 
-print("Feliz lançamento")
+ resultado = numero * contador
+
+print(f"{numero} x {contador} = {resultado}")
