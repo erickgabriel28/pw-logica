@@ -1,11 +1,12 @@
-filmes = ["Interestelar", "gente grande", "Shrek", "Batman", "Senhor dos aneis"]
+produtos = ["Pao de queijo", "Arroz", "Feijao"]
 
-print("filmes{0}")
-print("filmes{1}")
-print("filmes{2}")
-print("filmes{3}")
-print("filmes{4}")
+print(produtos)
 
-quantidade = len(filmes)
+produtos.append("Banana")
+produtos.append("Maça")
 
-print(f"Temos {quantidade} de filme cadastrado")
+print(produtos)
+
+quantidade = len(produtos)
+
+print(f"Temos a {quantidade} de produtos na lista")
