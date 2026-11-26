@@ -1,12 +1,4 @@
-produtos = ["Pao de queijo", "Arroz", "Feijao"]
+nomes = {"Kaua", "Erick", "Lucas", "Miguel", "Bernado"}
 
-print(produtos)
-
-produtos.append("Banana")
-produtos.append("Maça")
-
-print(produtos)
-
-quantidade = len(produtos)
-
-print(f"Temos a {quantidade} de produtos na lista")
+for indice, nomes in enumerate(nomes, start=1):
+    print(f"{indice}º - {nomes}")
