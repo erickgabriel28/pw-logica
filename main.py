@@ -1,11 +1,18 @@
-alunos = {
-    "joao": 8,
-    "maria": 9,
-    "Pedro": 5,
-    "roberto": 6,
-}
-for nota, nota in alunos.items():
-    if nota >= 7:
-        print(f"{nome}Esta aprovado: ")
+numeros = []
+
+for contador in range(10):
+    numero = int(input(f"Digite o {contador + 1}ª número: "))
+    numeros.append(numeros)
+pares = []
+impares = []
+
+for numero in numeros:
+    if numero % 2 == 0:
+        pares.append(numero)
     else:
-        print(f"{nome}Esta reprovado: ")
+        impares.append(numero)
+print("Lista original", numero)
+print("Numeros pares", pares)
+print("Numeros impares", impares)
+print("quantidade de pares", len(pares))
+print("quantidade de impares", len(pares))
